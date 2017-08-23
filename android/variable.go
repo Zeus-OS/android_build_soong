@@ -20,6 +20,8 @@ import (
 	"runtime"
 	"strings"
 
+	"zenx/soong/android"
+
 	"github.com/google/blueprint/proptools"
 )
 
@@ -124,6 +126,9 @@ type variableProperties struct {
 			Static_libs  []string
 			Srcs         []string
 		}
+
+		// include Zenx variables
+		Zenx android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -287,6 +292,9 @@ type productVariables struct {
 	ProductHiddenAPIStubsTest   []string `json:",omitempty"`
 
 	TargetFSConfigGen []string `json:",omitempty"`
+
+	// include Zenx variables
+	Zenx android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
