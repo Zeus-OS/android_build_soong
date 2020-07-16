@@ -120,6 +120,8 @@ var Configuration = map[string]PathConfig{
 	"pkg-config": Allowed,
 	"clang":      Allowed,
 	"as":         Allowed,
+	"ping":         Allowed,
+	"curl":         Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
