@@ -122,6 +122,7 @@ var Configuration = map[string]PathConfig{
 	"as":         Allowed,
 	"ping":         Allowed,
 	"curl":         Allowed,
+	"arm-linux-androidkernel-as":         Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
