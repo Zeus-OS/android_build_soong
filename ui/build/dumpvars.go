@@ -137,6 +137,7 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 // Variables to print out in the top banner
 var BannerVars = []string{
         "ZENX_VERSION",
+        "ZENX_BUILD_VARIANT",
 	"TARGET_PRODUCT",
 	"TARGET_BUILD_VARIANT",
 	"TARGET_ARCH",
