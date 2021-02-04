@@ -109,18 +109,19 @@ var Configuration = map[string]PathConfig{
 	"tr":      Allowed,
 	"unzip":   Allowed,
 	"zip":     Allowed,
+	"clang":     Allowed,
+	"ld.bfd":     Allowed,
+	"as":     Allowed,
+	"llvm-nm":     Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
 	"ar":         Forbidden,
-	"as":         Forbidden,
 	"cc":         Forbidden,
-	"clang":      Forbidden,
 	"clang++":    Forbidden,
 	"gcc":        Forbidden,
 	"g++":        Forbidden,
 	"ld":         Forbidden,
-	"ld.bfd":     Forbidden,
 	"ld.gold":    Forbidden,
 
 	// These are toybox tools that only work on Linux.
